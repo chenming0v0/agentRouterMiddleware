@@ -1,0 +1,21 @@
+# Runtime configuration: contains real upstream credentials, mode 0600.
+config.json
+
+# Persistent request-log metadata and captured bodies.
+/data/
+
+# Build output.
+/bin/
+/dist/
+
+# Node / pnpm workspace.
+node_modules/
+web/node_modules/
+
+# Generated WebUI build output; keep the embed placeholder.
+web/dist/*
+!web/dist/.gitkeep
+
+# Editor / OS noise.
+*.swp
+.DS_Store
